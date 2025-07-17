@@ -41,10 +41,10 @@ export default function ViewUser() {
             </div>
             <ul className="list-group list-group-flush">
               <li className="list-group-item">
-                <b>Name:</b> {user.name}
+                <b>Acc_Num:</b> {user.name}
               </li>
               <li className="list-group-item">
-                <b>Username:</b> {user.username}
+                <b>Address:</b> {user.username}
               </li>
               <li className="list-group-item">
                 <b>Email:</b> {user.email}

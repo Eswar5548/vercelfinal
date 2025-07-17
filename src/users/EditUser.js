@@ -61,7 +61,7 @@ export default function EditUser() {
           <form onSubmit={(e) => onSubmit(e)}>
             <div className="mb-3">
               <label htmlFor="Name" className="form-label">
-                Name
+                Acc_Num
               </label>
               <input
                 type="text"

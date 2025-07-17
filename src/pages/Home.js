@@ -62,7 +62,7 @@ export default function Home() {
           <thead>
             <tr>
               <th scope="col">S.N</th>
-              <th scope="col">Name</th>
+              <th scope="col">Acc_Num</th>
               <th scope="col">Address</th>
               <th scope="col">Email</th>
               <th scope="col">Action</th>
