@@ -74,7 +74,7 @@ export default function EditUser() {
             </div>
             <div className="mb-3">
               <label htmlFor="Username" className="form-label">
-                Username
+                address
               </label>
               <input
                 type="text"
