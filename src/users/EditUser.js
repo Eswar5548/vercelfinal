@@ -15,7 +15,7 @@ export default function EditUser() {
   const { name, username, email } = user;
 
   // ✅ Use the same API base URL as Home.js
-  const API_BASE = "   https://1dbba042dfdb.ngrok-free.app ";
+  const API_BASE = "  https://3ae2618e84ba.ngrok-free.app";
 
   const onInputChange = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value });
