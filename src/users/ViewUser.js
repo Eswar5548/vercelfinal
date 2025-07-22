@@ -11,7 +11,7 @@ export default function ViewUser() {
 
   const { id } = useParams();
 
-  const API_BASE = "https://7e32ae82cbdf.ngrok-free.app"; // ✅ Same base URL as Home.js & EditUser.js
+  const API_BASE = "https://13d3953a3225.ngrok-free.app"; // ✅ Same base URL as Home.js & EditUser.js
 
   useEffect(() => {
     loadUser();
