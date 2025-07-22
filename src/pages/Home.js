@@ -7,7 +7,7 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const API_BASE = "  https://1c9e54f0354a.ngrok-free.app ";
+  const API_BASE = "https://7e32ae82cbdf.ngrok-free.app";
 
   useEffect(() => {
     loadUsers();
