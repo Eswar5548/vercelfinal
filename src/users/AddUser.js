@@ -5,7 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 export default function AddUser() {
   let navigate = useNavigate();
 
-  const API_BASE = "https://16c8a9dd649d.ngrok-free.app "; // ✅ Same as Home.js
+  const API_BASE = " https://1c9e54f0354a.ngrok-free.app "; // ✅ Same as Home.js
 
   const [user, setUser] = useState({
     name: "",
