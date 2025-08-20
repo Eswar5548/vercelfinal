@@ -5,7 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 export default function AddUser() {
   let navigate = useNavigate();
 
-  const API_BASE = "https://13d3953a3225.ngrok-free.app"; // ✅ Same as Home.js
+  const API_BASE = " http://localhost:8080"; // ✅ Same as Home.js
 
   const [user, setUser] = useState({
     name: "",
@@ -41,7 +41,7 @@ export default function AddUser() {
           <form onSubmit={onSubmit}>
             <div className="mb-3">
               <label htmlFor="Name" className="form-label">
-                Acc_Num
+                policyNumber
               </label>
               <input
                 type="text"
@@ -54,7 +54,7 @@ export default function AddUser() {
             </div>
             <div className="mb-3">
               <label htmlFor="Username" className="form-label">
-                Address
+                claimStatus
               </label>
               <input
                 type="text"
@@ -67,7 +67,7 @@ export default function AddUser() {
             </div>
             <div className="mb-3">
               <label htmlFor="Email" className="form-label">
-                E-mail
+                approverComments
               </label>
               <input
                 type="email"

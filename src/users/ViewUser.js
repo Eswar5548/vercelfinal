@@ -11,7 +11,7 @@ export default function ViewUser() {
 
   const { id } = useParams();
 
-  const API_BASE = "https://13d3953a3225.ngrok-free.app"; // ✅ Same base URL as Home.js & EditUser.js
+  const API_BASE = " http://localhost:8080"; // ✅ Same base URL as Home.js & EditUser.js
 
   useEffect(() => {
     loadUser();
@@ -41,13 +41,13 @@ export default function ViewUser() {
             </div>
             <ul className="list-group list-group-flush">
               <li className="list-group-item">
-                <b>Acc_Num:</b> {user.name}
+                <b>policyNumber:</b> {user.name}
               </li>
               <li className="list-group-item">
-                <b>Address:</b> {user.username}
+                <b>claimStatus:</b> {user.username}
               </li>
               <li className="list-group-item">
-                <b>Email:</b> {user.email}
+                <b>approverComments:</b> {user.email}
               </li>
             </ul>
           </div>

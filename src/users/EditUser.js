@@ -14,8 +14,7 @@ export default function EditUser() {
 
   const { name, username, email } = user;
 
-  // ✅ Use the same API base URL as Home.js
-  const API_BASE = "https://13d3953a3225.ngrok-free.app";
+  const API_BASE = "http://localhost:8080"; // removed leading space
 
   const onInputChange = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value });
@@ -25,7 +24,6 @@ export default function EditUser() {
     loadUser();
   }, []);
 
-  // ✅ Submit updated data
   const onSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -39,7 +37,6 @@ export default function EditUser() {
     }
   };
 
-  // ✅ Load user details for editing
   const loadUser = async () => {
     try {
       const result = await axios.get(`${API_BASE}/user/${id}`, {
@@ -61,43 +58,46 @@ export default function EditUser() {
           <form onSubmit={(e) => onSubmit(e)}>
             <div className="mb-3">
               <label htmlFor="Name" className="form-label">
-                Acc_Num
+                policyNumber
               </label>
               <input
                 type="text"
                 className="form-control"
-                placeholder="Enter your name"
+                placeholder="Enter Policy Number"
                 name="name"
                 value={name}
                 onChange={onInputChange}
               />
             </div>
+
             <div className="mb-3">
-              <label htmlFor="Username" className="form-label">
-                address
+              <label htmlFor="claimStatus" className="form-label">
+                claimStatus
               </label>
               <input
                 type="text"
                 className="form-control"
-                placeholder="Enter your username"
+                placeholder="Enter Claim Status"
                 name="username"
                 value={username}
                 onChange={onInputChange}
               />
             </div>
+
             <div className="mb-3">
-              <label htmlFor="Email" className="form-label">
-                E-mail
+              <label htmlFor="approverComments" className="form-label">
+                approverComments
               </label>
               <input
                 type="text"
                 className="form-control"
-                placeholder="Enter your e-mail address"
+                placeholder="Enter your approverComments"
                 name="email"
                 value={email}
                 onChange={onInputChange}
               />
             </div>
+
             <button type="submit" className="btn btn-outline-primary">
               Submit
             </button>

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+// import AdvancedOptions from './AdvancedOptions';
 import { Link } from "react-router-dom";
 
 export default function Home() {
@@ -7,7 +8,7 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const API_BASE = " https://13d3953a3225.ngrok-free.app";
+  const API_BASE = "  http://localhost:8080";
 
   useEffect(() => {
     loadUsers();
@@ -61,10 +62,10 @@ export default function Home() {
         <table className="table border shadow">
           <thead>
             <tr>
-              <th scope="col">S.N</th>
-              <th scope="col">Acc_Num</th>
-              <th scope="col">Address</th>
-              <th scope="col">Email</th>
+              <th scope="col">claimId</th>
+              <th scope="col">policyNumber</th>
+              <th scope="col">claimStatus</th>
+              <th scope="col">approverComments</th>
               <th scope="col">Action</th>
             </tr>
           </thead>
@@ -111,3 +112,6 @@ export default function Home() {
     </div>
   );
 }
+
+
+
