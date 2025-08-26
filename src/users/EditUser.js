@@ -58,7 +58,7 @@ export default function EditUser() {
           <form onSubmit={(e) => onSubmit(e)}>
             <div className="mb-3">
               <label htmlFor="Name" className="form-label">
-                policyNumber
+                PolicyNumber
               </label>
               <input
                 type="text"
@@ -72,7 +72,7 @@ export default function EditUser() {
 
             <div className="mb-3">
               <label htmlFor="claimStatus" className="form-label">
-                claimStatus
+                ClaimStatus
               </label>
               <input
                 type="text"
@@ -86,7 +86,7 @@ export default function EditUser() {
 
             <div className="mb-3">
               <label htmlFor="approverComments" className="form-label">
-                approverComments
+                ApproverComments
               </label>
               <input
                 type="text"
