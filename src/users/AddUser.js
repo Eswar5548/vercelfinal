@@ -41,7 +41,7 @@ export default function AddUser() {
           <form onSubmit={onSubmit}>
             <div className="mb-3">
               <label htmlFor="Name" className="form-label">
-                policyNumber
+                Acc_Num
               </label>
               <input
                 type="text"
@@ -54,7 +54,7 @@ export default function AddUser() {
             </div>
             <div className="mb-3">
               <label htmlFor="Username" className="form-label">
-                claimStatus
+                Address
               </label>
               <input
                 type="text"
@@ -67,7 +67,7 @@ export default function AddUser() {
             </div>
             <div className="mb-3">
               <label htmlFor="Email" className="form-label">
-                approverComments
+                Email
               </label>
               <input
                 type="email"

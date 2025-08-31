@@ -62,10 +62,10 @@ export default function Home() {
         <table className="table border shadow">
           <thead>
             <tr>
-              <th scope="col">ClaimId</th>
-              <th scope="col">PolicyNumber</th>
-              <th scope="col">ClaimStatus</th>
-              <th scope="col">ApproverComments</th>
+              <th scope="col">Id</th>
+              <th scope="col">Acc_Num</th>
+              <th scope="col">Address</th>
+              <th scope="col">Email</th>
               <th scope="col">Action</th>
             </tr>
           </thead>
